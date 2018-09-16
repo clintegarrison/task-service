@@ -10,5 +10,7 @@ app.get('/tasks', function (req, res) {
 })
 
 app.listen(process.env.PORT || 9090, function(){
-    console.log('starting server on port 9090')
+    console.log('starting server')
+    dbManager.connect()
+    console.log('connecting to db')
 })

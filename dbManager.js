@@ -3,7 +3,9 @@
 const { Client } = require('pg')
 const client = new Client()
 
-client.connect()
+function connect(){
+  client.connect()
+}
 
 function getTasks(callback){
     executeQuery('SELECT * FROM tasks', [], function(result){
@@ -24,7 +26,8 @@ function executeQuery(sql, args, callback){
 }
 
 var databaseManager = {
+  connect: connect,
 	getTasks: getTasks
 }
 
-module.exports = databaseManager;
+module.exports = databaseManager
