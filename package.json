@@ -1,0 +1,22 @@
+{
+  "name": "task-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clintegarrison/task-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clintegarrison/task-service/issues"
+  },
+  "homepage": "https://github.com/clintegarrison/task-service#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
